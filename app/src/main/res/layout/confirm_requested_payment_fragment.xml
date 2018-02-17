@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="Bill Desk "
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_bottom"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/from_account_num" />
+
+                <TextView
+                    android:id="@+id/from_account_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/current_bal" />
+
+                <TextView
+                    android:id="@+id/current_balance_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/merchant_name_col" />
+
+                <TextView
+                    android:id="@+id/merchant_name_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/order_num" />
+
+                <TextView
+                    android:id="@+id/order_number_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/space" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/amount_col" />
+
+                <TextView
+                    android:id="@+id/amount_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingBottom="@dimen/padding_bottom"
+                    android:paddingTop="@dimen/padding_top"
+                    android:text="@string/space" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pay_now_button_view"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_start"
+                android:background="@drawable/riffle_effect_for_buttons"
+                android:clickable="true"
+                android:paddingEnd="@dimen/padding_end"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:paddingStart="@dimen/padding_start"
+                android:text="@string/payNow"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/redirect_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/redirect_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:progress="0"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/progress_bar_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="Redirecting to previous application, Please wait..."
+            android:textColor="@color/paymentTextColor"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6936c3</color>
+    <color name="colorPrimaryDark">#6936a2</color>
+    <color name="colorAccent">#6936c3</color>
+    <color name="paymentTextColor">#3F51B5</color>
+    <color name="backGroundColor">#c2a7f1</color>
+</resources>

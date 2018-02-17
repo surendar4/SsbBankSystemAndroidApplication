@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:paddingEnd="@dimen/padding_end"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:paddingStart="@dimen/padding_start">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="@dimen/padding_top"
+            android:text="Payment Receipt"
+            android:textColor="@color/paymentTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="Transaction Status" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/transaction_status_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="@string/space" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="Beneficiary Full Name" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/ben_full_name_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="@string/space" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="Account Number" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/ben_account_number_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="@string/space" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="Transaction Type" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/transaction_type_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="@string/space" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ref_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="Reference Number" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/receipt_reference_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="@string/space" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="Amount" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/amount_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/padding_top"
+                android:text="@string/space" />
+        </LinearLayout>
+
+        <Button
+            android:textSize="15sp"
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/riffle_effect_for_buttons"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Home"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

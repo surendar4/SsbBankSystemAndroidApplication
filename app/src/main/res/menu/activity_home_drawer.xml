@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_my_accounts"
+            android:icon="@drawable/accounts_2"
+            android:title="My Accounts" />
+        <item
+            android:id="@+id/nav_funds_transfer"
+            android:icon="@drawable/funds_transfer_2"
+            android:title="Funds Transfer" />
+        <item
+            android:id="@+id/nav_change_password_pin"
+            android:icon="@drawable/security_pin"
+            android:title="Change Password"/>
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Invite" />
+        </menu>
+    </item> -->
+
+</menu>

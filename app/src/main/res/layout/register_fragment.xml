@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_layout_register_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_bottom"
+        android:paddingEnd="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingStart="32dp"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/account_number_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/bank_account_number_16"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/bank_account_number_16"
+            android:hint="@string/accountNumber"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingTop="@dimen/padding_top"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/customer_id_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/customerid"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/customerid"
+            android:hint="@string/customerId"
+            android:inputType="text"
+            android:maxLength="10"
+            android:paddingTop="16dp"
+            android:textAllCaps="true"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/mobile_number_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mobilenumber"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/mobilenumber"
+            android:hint="@string/mobileNumber"
+            android:inputType="phone"
+            android:paddingTop="16dp"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/usernameSet_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/username_16"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/username_16"
+            android:hint="@string/userName"
+            android:inputType="text"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/passwordSet_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/lock"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="18"
+            android:paddingTop="@dimen/padding_top"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/confirm_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/lock"
+            android:hint="@string/confirmPassword"
+            android:inputType="textPassword"
+            android:maxLines="18"
+            android:paddingTop="@dimen/padding_top"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/easyPin_radio_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:paddingEnd="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Easy PIN:"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checkedButton="@+id/pin_enable_radio"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pin_enable_radio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Enable"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/pin_disable_radio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.25"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Disable"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:animationCache="true"
+            android:id="@+id/pin_layout_with_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:animationCache="true"
+                android:id="@+id/register_pin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/pin_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/security_pin"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/security_pin"
+                    android:hint="Enter 4 Digit Security PIN"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:paddingTop="@dimen/padding_top"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/confirm_pin_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/security_pin"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/security_pin"
+                    android:hint="Confirm Security PIN"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:paddingTop="@dimen/padding_top"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/riffle_effect_for_buttons"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/register"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

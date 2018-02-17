@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="purpose">Purpose</string>
+    <string-array name="purpose_options">
+        <item>Gift to Relatives</item>
+        <item>Repayment</item>
+        <item>Giving Loan</item>
+        <item>Other</item>
+    </string-array>
+    <string name="transaction_mode">Transaction Mode</string>
+    <string-array name="transaction_mode_options">
+        <item>NEFT</item>
+        <item>IMPS</item>
+    </string-array>
+    <string name="select_beneficiary">Select Beneficiary </string>
+</resources>
